@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- enc means how to send data in which form -->
+    <form action="/submituserdata" method="post" target="_Blank" autocomplete="off" id="mycar"
+    enctype="multipart/form-data">
+        <input type="text" name="email" placeholder="enter your name">
+        <input type="password" name="pwd" placeholder="enter your password">
+        <!-- <input type="button"  value="login"> -->
+        <label>what is your age</label>
+        <select name="userage" size="1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3"selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+
+        </select>
+        <textarea name="message" rows="10" cols="50"
+        style="width: 100px; height:100px; max-width: 300px; max-height:300px;"></textarea>
+<button type="button"onclick="alert('hey there its not safe to click')">dont click</button>
+<fieldset>
+    <legend><b>login</b></legend>
+    <input type="text" name="email" placeholder="enter your name" list="myname">
+    <datalist id="myname">
+        <option value="harshal">
+        <option value="kartik">
+    </datalist>
+    <input type="password" name="pwd" placeholder="enter your password">
+    <input type="submit"  value="login" form="mycar" formaction="/someotherpath"formmethod="get"formtarget="_blank">
+   
+</fieldset>
+
+
+
+
+    </form>
+    <!-- semantic type tags -->
+    <header>hey this is a header</header>
+    <footer>hey this is a footer</footer>
+    <nav>
+        <ul>
+            <li onclick="alert('hello welcome to home page')">home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+    <article>
+        <h3>its a article</h3>
+    </article>
+    <aside>not interesting</aside>
+    <main>this is main</main>
+  <section>
+    <h2>hello</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eaque sunt dolorem facere natus. Libero, atque ea fugiat tenetur, pariatur id inventore nesciunt distinctio porro eveniet nostrum? Consequuntur facere vitae aspernatur repellat illo? Exercitationem!</p>
+  </section>
+</body>
+</html>
